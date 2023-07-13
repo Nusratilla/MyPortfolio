@@ -6,7 +6,7 @@
 }
 
 :root {
-  --primary-color: #eeeeee;
+  --primary-color: rgba(238, 241, 255, 1);
   --font-color: rgb(0, 0, 0);
   --secondary-color: #9818d6;
   --shadow-color-opacity: rgba(0, 0, 0, 0.5);
@@ -60,9 +60,6 @@ h2 {
 .header {
   min-height: 100vh;
   background-color: var(--primary-color);
-  /* background: no-repeat url("../img/1.jpg");
-  background-size: cover;
-  background-position: center; */
 }
 
 .menubar {
@@ -174,7 +171,6 @@ h2 {
   justify-content: center;
   align-items: center;
   padding: 0 5%;
-  /* overflow: hidden; */
 }
 .cols {
   position: relative;
@@ -219,7 +215,7 @@ button {
   border-radius: 0.2rem;
   border: 1px solid #8f9092;
   transition: all 0.2s ease;
-  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 1px;
   font-size: 14px;
   font-weight: 600;
   color: #606060;
@@ -227,19 +223,15 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+  box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 4px #d6d7d9, 0 -4px 4px #cecfd1,
     0 -6px 4px #fefefe, inset 0 0 3px 3px #cecfd1;
 }
 
 button:active {
-  box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
+  box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 4px #d6d7d9, 0 -4px 4px #cecfd1,
     0 -6px 4px #fefefe, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
 }
 
-button:focus {
-  box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
-    0 -6px 4px #fefefe, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
-}
 .image img {
   position: absolute;
   top: 50%;
