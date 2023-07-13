@@ -16,4 +16,12 @@ window.addEventListener('DOMContentLoaded', () => {
         iconMoon.classList.toggle('bi-sun-fill');
     });
 
+    // ---------------typed animation--------------- 
+    const typed = new Typed('.name-input', {
+        strings: ['Nusratilla Rikhsiev', 'Front-End Web Developer', 'UI UX Designer'],
+        typeSpeed: 100,
+        backSpeed: 65,
+        loop: true
+    })
+
 });
