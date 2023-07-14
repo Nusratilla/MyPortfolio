@@ -8,7 +8,7 @@
 :root {
   --primary-color: rgba(238, 241, 255, 1);
   --font-color: rgb(0, 0, 0);
-  --shadow-color-opacity: rgba(0, 0, 0, 0.5);
+  --shadow-color-opacity: rgba(0, 0, 0, 0.8);
   --menu-color: rgba(112, 112, 112, 0.8);
   --secondary-color: #9818d6;
   --accent-color: #ff4321;
@@ -21,7 +21,7 @@
 .dark-theme {
   --primary-color: #000000;
   --font-color: rgb(255, 255, 255);
-  --shadow-color-opacity: rgba(255, 255, 255, 0.5);
+  --shadow-color-opacity: rgba(255, 255, 255, 0.8);
   --menu-color: rgba(0, 0, 0, 0.8);
 }
 html {
@@ -74,6 +74,7 @@ span {
   font-size: 25px;
   text-decoration: none;
   font-weight: 600;
+  text-shadow: 0 1px 1px var(--shadow-color-opacity);
   cursor: pointer;
 }
 .navbar a {
@@ -85,11 +86,13 @@ span {
 }
 .navbar a:hover {
   color: var(--secondary-color);
+  text-shadow: 0 1px 1px var(--shadow-color-opacity);
 }
 .navbar #icon-moon {
   font-size: 1.2rem;
   padding-left: 1.2rem;
   color: #ffffff;
+  text-shadow: 0 1px 1px var(--shadow-color-opacity);
   cursor: pointer;
 }
 .navbar #icon-moon:hover {
@@ -180,6 +183,9 @@ span {
   padding: 0.5rem;
   color: var(--font-color);
 }
+.name-input {
+  text-shadow: 0 1px 1px var(--shadow-color-opacity);
+}
 .intro-buttons {
   position: relative;
   width: 100%;
@@ -193,6 +199,7 @@ button {
   width: 150px;
   height: 32px;
   margin: 0.5rem;
+  margin-top: 1rem;
   background-image: linear-gradient(to top, #d8d9db 0%, #fff 80%, #fdfdfd 100%);
   border-radius: 0.2rem;
   border: 1px solid #6b6b6b;
@@ -240,6 +247,7 @@ button:active {
   height: 100px;
   background: var(--secondary-color);
   border-radius: 50%;
+  box-shadow: 0 1px 1px var(--shadow-color-opacity);
   position: absolute;
   animation: move-up1 2s ease-in infinite alternate-reverse;
 }
@@ -249,18 +257,18 @@ button:active {
 }
 .circle:nth-child(2) {
   bottom: -60px;
-  right: -20px;
+  right: 1px;
   z-index: 1;
   animation-name: move-down1;
 }
 @keyframes move-up1 {
   to {
-    transform: translateY(-15px);
+    transform: translateY(-20px);
   }
 }
 @keyframes move-down1 {
   to {
-    transform: translateX(20px);
+    transform: translateX(30px);
   }
 }
 @media (max-width: 954px) {

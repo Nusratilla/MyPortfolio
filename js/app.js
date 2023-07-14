@@ -19,8 +19,8 @@ window.addEventListener('DOMContentLoaded', () => {
     // ---------------typed animation--------------- 
     const typed = new Typed('.name-input', {
         strings: ['Nusratilla Rikhsiev', 'Front-End Web Developer', 'UI UX Designer'],
-        typeSpeed: 100,
-        backSpeed: 65,
+        typeSpeed: 90,
+        backSpeed: 60,
         loop: true
     })
 
