@@ -79,7 +79,7 @@ span {
 }
 .navbar a {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   margin: 0 15px;
   transition: 0.3s;
@@ -117,20 +117,25 @@ span {
   .navbar {
     position: fixed;
     top: 100%;
-    right: 0;
+    right: -16rem;
     width: 16rem;
-    padding: 0.5rem 2%;
+    font-size: 1rem;
+    padding: 0.8rem 2%;
+    border-radius: 0 0 0 0.3rem;
     background: var(--menu-color);
     border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+    border-left: 2px solid rgba(0, 0, 0, 0.8);
+    padding-bottom: 2rem;
     text-align: center;
-    display: none;
+    transition: 0.6s ease-in-out;
   }
   .navbar.active {
     display: block;
+    right: 0;
   }
   .navbar a {
     display: block;
-    margin: 0.5rem 0;
+    margin: 0.8rem 0;
   }
 }
 /* --------------- Hero Section --------------- */
