@@ -14,8 +14,8 @@ body {
   --accent-color: #ff4321;
 
   --big-font: 2.4rem;
-  --h2-font: 3rem;
-  --h4-font: 2rem;
+  --h2-font: 2.6rem;
+  --h4-font: 1.8rem;
   --p-font: 1.2rem;
   transition: 0.5s ease;
 }
@@ -150,7 +150,6 @@ span {
   width: 100%;
   min-height: 100vh;
   padding-top: 7rem;
-  /* border: 1px solid black; */
 }
 .intro-wrapper {
   position: relative;
@@ -163,14 +162,11 @@ span {
 .cols {
   position: relative;
   justify-content: center;
-  /* border: 1px solid black; */
-}
-.cols1 {
   width: 50%;
 }
 .cols2 {
   border-left: 3px solid var(--secondary-color);
-  width: 50%;
+  padding-left: 1rem;
 }
 .topline-h4 {
   position: relative;
@@ -223,10 +219,12 @@ button {
   text-shadow: 0 1px #fff;
 }
 button:hover {
+  color: var(--accent-color);
   box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 4px #d6d7d9, 0 -4px 4px #cecfd1,
     0 -6px 4px #fefefe, inset 0 0 3px 3px #cecfd1;
 }
 button:active {
+  color: var(--accent-color);
   box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 4px #d6d7d9, 0 -4px 4px #cecfd1,
     0 -6px 4px #fefefe, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
 }
@@ -237,8 +235,6 @@ button:active {
   transform: translate(-50%, -50%);
   max-width: 280px;
   max-height: 330px;
-  transition: all 0.2s;
-  cursor: pointer;
 }
 .card-inner img {
   border-radius: 1rem;
@@ -246,12 +242,12 @@ button:active {
   height: 100%;
 }
 .circle {
+  position: absolute;
   width: 100px;
   height: 100px;
   background: var(--secondary-color);
   border-radius: 50%;
   box-shadow: 0 1px 1px var(--shadow-color-opacity);
-  position: absolute;
 }
 .circle-cols2 {
   top: -45px;
@@ -302,8 +298,61 @@ button:active {
   align-items: center;
   width: 100%;
 }
+.about-me-bl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-me-bl-title {
+  font-size: var(--h2-font);
+  color: var(--font-color);
+  padding: 3rem 1rem;
+}
+.about-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+.about-me-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+}
+.about-me-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin: 1rem;
+  justify-content: center;
+}
+.about-me-title {
+  padding-bottom: 1rem;
+  font-size: var(--h4-font);
+  color: var(--font-color);
+}
+.about-me-p {
+  font-size: var(--p-font);
+  color: var(--font-color);
+}
+.about-main-image img {
+  height: 310;
+  width: 250;
+  border-radius: 0.5rem;
+  transform: rotateY(180deg);
+}
+@media (max-width: 954px) {
+  .about-main {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-/* ----------about-education-wrk-exp---------- */
+/* ----------about-edu-wrk-exp---------- */
 .about-edu-wrk-row {
   position: relative;
   display: flex;
@@ -313,7 +362,7 @@ button:active {
   width: 90%;
 }
 .abt-edu-title {
-  font-size: var(--h2-font);
+  font-size: var(--h4-font);
   color: var(--font-color);
   padding: 3rem 1rem;
 }
@@ -389,9 +438,9 @@ button:active {
 .about-backSide::before {
   background: linear-gradient(
     135deg,
-    var(--secondary-color) 91%,
-    var(--accent-color) 92%,
-    var(--secondary-color) 93%
+    var(--secondary-color) 87%,
+    var(--accent-color) 88%,
+    var(--secondary-color) 89%
   );
 }
 
