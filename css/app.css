@@ -13,9 +13,9 @@ body {
   --secondary-color: #9818d6;
   --accent-color: #ff4321;
 
-  --big-font: 2.2rem;
-  --h2-font: 2rem;
-  --h4-font: 1.6rem;
+  --big-font: 2.4rem;
+  --h2-font: 3rem;
+  --h4-font: 2rem;
   --p-font: 1.2rem;
   transition: 0.5s ease;
 }
@@ -42,6 +42,7 @@ body {
 }
 span {
   color: var(--secondary-color);
+  text-shadow: 0 1px 1px var(--shadow-color-opacity);
 }
 /* ----------Menu Bar---------- */
 .menubar {
@@ -143,9 +144,13 @@ span {
 /* --------------- Hero Section --------------- */
 .hero-section {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100vh;
-  padding-top: 5rem;
+  min-height: 100vh;
+  padding-top: 7rem;
+  /* border: 1px solid black; */
 }
 .intro-wrapper {
   position: relative;
@@ -158,16 +163,14 @@ span {
 .cols {
   position: relative;
   justify-content: center;
-  width: 50%;
+  /* border: 1px solid black; */
 }
 .cols1 {
-  padding-left: 1rem;
-  margin-left: 1rem;
+  width: 50%;
 }
 .cols2 {
   border-left: 3px solid var(--secondary-color);
-  padding-left: 1rem;
-  margin-left: 1rem;
+  width: 50%;
 }
 .topline-h4 {
   position: relative;
@@ -182,15 +185,18 @@ span {
   font-size: var(--big-font);
   padding: 0.5rem;
 }
+.topline-h2 {
+  position: relative;
+  color: var(--font-color);
+  font-size: var(--big-font);
+  padding: 0.5rem;
+}
 .cols > p {
   display: block;
   width: 90%;
   font-size: var(--p-font);
   padding: 0.5rem;
   color: var(--font-color);
-}
-.name-input {
-  text-shadow: 0 1px 1px var(--shadow-color-opacity);
 }
 .intro-buttons {
   position: relative;
@@ -229,8 +235,8 @@ button:active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 250px;
-  max-height: 300px;
+  max-width: 280px;
+  max-height: 330px;
   transition: all 0.2s;
   cursor: pointer;
 }
@@ -238,7 +244,6 @@ button:active {
   border-radius: 1rem;
   width: 100%;
   height: 100%;
-  transform: rotatey(180deg);
 }
 .circle {
   width: 100px;
@@ -247,41 +252,45 @@ button:active {
   border-radius: 50%;
   box-shadow: 0 1px 1px var(--shadow-color-opacity);
   position: absolute;
-  animation: move-up1 2s ease-in infinite alternate-reverse;
 }
-.circle:nth-child(1) {
+.circle-cols2 {
+  top: -45px;
+  right: 5px;
+  z-index: -1;
+  animation: move-left1 3s ease-in-out infinite alternate-reverse;
+}
+.circle-cols1-1 {
   top: -25px;
-  left: -15px;
+  right: -5px;
+  z-index: -1;
+  animation: move-up1 2.5s ease-in-out infinite alternate-reverse;
 }
-.circle:nth-child(2) {
+.circle-cols1-2 {
   bottom: -60px;
-  right: 1px;
+  left: 1px;
   z-index: 1;
-  animation-name: move-down1;
+  animation: move-left1 2s ease-in-out infinite alternate-reverse;
 }
 @keyframes move-up1 {
   to {
     transform: translateY(-20px);
   }
 }
-@keyframes move-down1 {
+@keyframes move-left1 {
   to {
     transform: translateX(30px);
   }
 }
 @media (max-width: 954px) {
   .intro-wrapper {
-    display: block;
+    flex-direction: column-reverse;
+    justify-content: center;
   }
   .cols {
     width: 90%;
-    left: 50%;
-    transform: translate(-50%);
-    padding-left: 0;
-    margin-left: 0;
   }
   .cols1 {
-    max-width: 30rem;
+    max-width: 35rem;
   }
 }
 /* ----------About section---------- */
@@ -292,44 +301,43 @@ button:active {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
 }
 
-/* ----------about-education---------- */
-.about-education-row {
+/* ----------about-education-wrk-exp---------- */
+.about-edu-wrk-row {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 90%;
-  border: 1px solid black;
 }
 .abt-edu-title {
   font-size: var(--h2-font);
+  color: var(--font-color);
   padding: 3rem 1rem;
 }
 .about-education {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  border: 1px solid black;
 }
 .about-myCard {
   background-color: transparent;
-  width: 200px;
-  height: 275px;
+  width: 270px;
+  height: 340px;
   padding: 1rem;
+  margin: 2rem 1rem;
   perspective: 1000px;
 }
 
 .about-title {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 900;
   text-align: center;
-  margin: 0;
 }
 
 .about-innerCard {
@@ -343,7 +351,7 @@ button:active {
 }
 
 .about-myCard:hover .about-innerCard {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 
 .about-frontSide,
@@ -360,7 +368,7 @@ button:active {
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 1rem;
   color: white;
-  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0.3em var(--shadow-color-opacity);
   font-weight: 700;
 }
 .about-img img {
@@ -370,20 +378,26 @@ button:active {
 .about-frontSide,
 .about-frontSide::before {
   background: linear-gradient(
-    43deg,
-    rgb(65, 88, 208) 0%,
-    rgb(200, 80, 192) 46%,
-    rgb(255, 204, 112) 100%
+    65deg,
+    var(--secondary-color) 35%,
+    var(--accent-color) 36%,
+    var(--secondary-color) 37%
   );
 }
 
 .about-backSide,
 .about-backSide::before {
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color) 91%,
+    var(--accent-color) 92%,
+    var(--secondary-color) 93%
+  );
 }
 
 .about-backSide {
   transform: rotateY(180deg);
+  padding: 9px;
 }
 
 .about-frontSide::before,
@@ -392,13 +406,13 @@ button:active {
   left: 50%;
   transform: translate(-50%, -50%);
   content: "";
-  width: 110%;
-  height: 110%;
+  width: 103%;
+  height: 103%;
   position: absolute;
   z-index: -1;
   border-radius: 1em;
   filter: blur(20px);
-  animation: animate 5s linear infinite;
+  animation: animate 6s linear infinite;
 }
 
 @keyframes animate {
