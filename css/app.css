@@ -343,6 +343,8 @@ button:active {
   height: 310;
   width: 250;
   border-radius: 0.5rem;
+  border: 3px solid var(--secondary-color);
+  box-shadow: 0 0 6px 1px var(--shadow-color-opacity);
   transform: rotateY(180deg);
 }
 @media (max-width: 954px) {
@@ -477,9 +479,91 @@ button:active {
     opacity: 0.3;
   }
 }
-/* ----------about-experience---------- */
+/* ----------skill-section---------- */
+.skills-title {
+  font-size: var(--h4-font);
+  color: var(--font-color);
+}
+.skill-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.skill-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 100px;
+  border-radius: 14px;
+  margin: 1rem;
+  z-index: 5;
+  overflow: hidden;
+  box-shadow: 2px 2px 6px #bebebe, -2px -2px 6px #ffffff;
+}
 
-/* ----------Menu Bar---------- */
+.skill-in-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 3px;
+  left: 3px;
+  width: 74px;
+  height: 94px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+.skill-img img {
+  width: 50px;
+  height: 50px;
+}
+
+.skill-anm-bl {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
 /* ----------Menu Bar---------- */
 /* ----------Menu Bar---------- */
 /* ----------Menu Bar---------- */
