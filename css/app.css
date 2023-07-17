@@ -8,8 +8,8 @@
 body {
   --primary-color: rgba(238, 241, 255, 1);
   --font-color: rgb(0, 0, 0);
-  --shadow-color-opacity: rgba(0, 0, 0, 0.8);
-  --menu-color: rgba(112, 112, 112, 0.8);
+  --shadow-color-opacity: rgba(0, 0, 0, 0.5);
+  --menu-color: rgba(107, 107, 107, 0.8);
   --secondary-color: #9818d6;
   --accent-color: #ff4321;
 
@@ -22,8 +22,8 @@ body {
 .dark-theme {
   --primary-color: #000000;
   --font-color: rgb(255, 255, 255);
-  --shadow-color-opacity: rgba(255, 255, 255, 0.8);
-  --menu-color: rgba(0, 0, 0, 0.8);
+  --shadow-color-opacity: rgba(255, 255, 255, 0.5);
+  --menu-color: rgba(22, 22, 22, 0.8);
   transition: 0.5s ease;
 }
 html {
@@ -54,7 +54,8 @@ span {
   left: 0;
   width: 100%;
   padding: 20px 100px;
-  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 0.5rem 0.5rem;
+  background: var(--menu-color);
   backdrop-filter: blur(10px);
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
   z-index: 1000;
@@ -81,7 +82,7 @@ span {
   cursor: pointer;
 }
 .navbar a {
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
   text-decoration: none;
   margin: 0 15px;
@@ -485,8 +486,9 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   max-width: 90%;
+  min-height: 25rem;
   border-radius: 1rem;
   box-shadow: 0 0 8px 1px var(--shadow-color-opacity);
 
