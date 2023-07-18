@@ -13,9 +13,12 @@ body {
   --secondary-color: #9818d6;
   --accent-color: #ff4321;
 
-  --big-font: 2.4rem;
-  --h2-font: 2.6rem;
+  --h1-font: 2.6rem;
+  --h2-font: 2.4rem;
+  --h3-font: 2.2rem;
   --h4-font: 1.8rem;
+  --h5-font: 1.6rem;
+  --h6-font: 1.4rem;
   --p-font: 1.2rem;
   transition: 0.5s ease;
 }
@@ -34,11 +37,17 @@ body {
 }
 ::-webkit-scrollbar {
   background-color: var(--primary-color);
-  width: 0.8rem;
+  width: 0.6rem;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #9818d6, #9818d6);
-  border-radius: 5rem;
+  background: linear-gradient(
+    /* transparent, */ -75deg,
+    var(--secondary-color) 33%,
+    var(--accent-color) 36%,
+    var(--secondary-color) 39%,
+    var(--primary-color) 90%
+  );
+  border-radius: 12rem;
 }
 span {
   color: var(--secondary-color);
@@ -57,7 +66,7 @@ span {
   border-radius: 0 0 0.5rem 0.5rem;
   background: var(--menu-color);
   backdrop-filter: blur(10px);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid var(--secondary-color);
   z-index: 1000;
 }
 .menubar::before {
@@ -127,8 +136,8 @@ span {
     padding: 0.8rem 2%;
     border-radius: 0 0 0 0.3rem;
     background: var(--menu-color);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
-    border-left: 2px solid rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid var(--secondary-color);
+    border-left: 2px solid var(--secondary-color);
     padding-bottom: 2rem;
     text-align: center;
     transition: 0.6s ease-in-out;
@@ -173,19 +182,18 @@ span {
   position: relative;
   color: var(--font-color);
   font-size: var(--h4-font);
-  letter-spacing: 0.2rem;
   padding: 0.5rem;
 }
 .topline-h1 {
   position: relative;
   color: var(--font-color);
-  font-size: var(--big-font);
+  font-size: var(--h2-font);
   padding: 0.5rem;
 }
 .topline-h2 {
   position: relative;
   color: var(--font-color);
-  font-size: var(--big-font);
+  font-size: var(--h4-font);
   padding: 0.5rem;
 }
 .cols > p {
@@ -558,8 +566,8 @@ button:active {
   z-index: 1;
   top: 50%;
   left: 50%;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: var(--accent-color);
   opacity: 1;
@@ -589,7 +597,20 @@ button:active {
   }
 }
 
-/* ----------Menu Bar---------- */
+/* ----------Portfolio-Section---------- */
+.portfolio-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-title {
+  font-size: var(--h2-font);
+  color: var(--font-color);
+  padding: 3rem 1rem;
+}
+
 /* ----------Menu Bar---------- */
 /* ----------Menu Bar---------- */
 /* ----------Menu Bar---------- */

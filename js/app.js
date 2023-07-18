@@ -46,6 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
               </div>
             </div>
             <div class="skill-anm-bl"></div>
+            <div class="skill-anm-bl2"></div>
         </div>
     `;
     })
