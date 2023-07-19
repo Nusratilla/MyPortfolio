@@ -473,7 +473,7 @@ button:active {
   z-index: -1;
   border-radius: 1em;
   filter: blur(20px);
-  animation: animate 6s linear infinite;
+  animation: animate 5s linear infinite;
 }
 
 @keyframes animate {
@@ -488,6 +488,71 @@ button:active {
   100% {
     opacity: 0.3;
   }
+}
+/* ----------Fun Facts---------- */
+.fun-myCard {
+  background-color: transparent;
+  width: 270px;
+  height: 340px;
+  padding: 1rem;
+  margin: 2rem 1rem;
+  perspective: 1000px;
+}
+
+.fun-title {
+  font-size: var(--h4-font);
+  text-align: center;
+}
+
+.fun-innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.fun-frontSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 0 0.3em var(--shadow-color-opacity);
+  font-weight: 700;
+}
+.fun-img img {
+  width: 150px;
+}
+.fun-frontSide,
+.fun-frontSide::before {
+  background: linear-gradient(
+    65deg,
+    var(--secondary-color) 35%,
+    var(--accent-color) 36%,
+    var(--secondary-color) 37%
+  );
+}
+.fun-frontSide::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 103%;
+  height: 103%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1em;
+  filter: blur(20px);
+  animation: animate 5s linear infinite;
 }
 /* ----------skill-section---------- */
 .skill-section {
@@ -617,9 +682,48 @@ button:active {
   padding: 3rem 1rem;
 }
 .portfolio-wrapper {
+  border: 1px solid red;
   display: flex;
 }
+.portf-coln1 {
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portf-coln2 {
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfol-img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1100px;
+  /* max-height: 330px; */
+}
+.portfol-img img {
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+}
 
-/* ----------Menu Bar---------- */
+/* ----------Contact Section---------- */
+.contact-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 25rem;
+  border: 1px solid black;
+}
 /* ----------Menu Bar---------- */
 /* ----------Menu Bar---------- */
