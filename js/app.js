@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
         <div class="skill-card">
             <div class="skill-in-card">
               <div class="skill-img">
-                <img src="img/SKILL-LOGO/${skill.image}" alt="" />
+                <img src="img/SKILL-LOGO/${skill.image}" />
                 <p class="skill-p">${skill.sname}</p>
               </div>
             </div>
