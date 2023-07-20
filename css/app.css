@@ -22,6 +22,17 @@ body {
   --p-font: 1.2rem;
   transition: 0.5s ease;
 }
+@media (max-width: 450px) {
+  body {
+    --h1-font: 1.9rem;
+    --h2-font: 1.7rem;
+    --h3-font: 1.5rem;
+    --h4-font: 1.3rem;
+    --h5-font: 1.2rem;
+    --h6-font: 1.1rem;
+    --p-font: 1rem;
+  }
+}
 .dark-theme {
   --primary-color: #000000;
   --font-color: rgb(255, 255, 255);
@@ -46,7 +57,7 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(
-    /* transparent, */ -75deg,
+    -75deg,
     var(--secondary-color) 33%,
     var(--accent-color) 36%,
     var(--secondary-color) 39%,
@@ -410,8 +421,8 @@ span {
 }
 .about-myCard {
   background-color: transparent;
-  width: 250px;
-  height: 320px;
+  width: 240px;
+  height: 300px;
   margin: 1.5rem;
   perspective: 1000px;
 }
@@ -529,6 +540,7 @@ span {
 
 .fun-title {
   font-size: var(--h4-font);
+  color: var(--font-color);
   text-align: center;
 }
 
@@ -590,17 +602,17 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 90%;
 }
 .skills-row {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  max-width: 90%;
+  width: 100%;
   min-height: 25rem;
   border-radius: 1rem;
   box-shadow: 0 0 8px 2px var(--shadow-color-opacity);
-
   border: 3px solid var(--secondary-color);
 }
 .skills-title {
@@ -713,13 +725,11 @@ span {
   padding: 3rem 1rem;
 }
 .portfolio-wrapper {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: row-reverse;
   padding: 1rem 0;
 }
 .portf-coln1 {
-  /* border: 1px solid black; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -727,11 +737,7 @@ span {
   align-items: center;
 }
 .portfol-img {
-  /* position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  max-width: 1100px;
+  max-width: 1000px;
 }
 .portfol-img img {
   border-radius: 1rem;
@@ -741,7 +747,6 @@ span {
   box-shadow: 0 0 8px 2px var(--shadow-color-opacity);
 }
 .portf-coln2 {
-  /* border: 1px solid black; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -773,11 +778,9 @@ span {
 .port-btns {
   display: flex;
   max-width: 95%;
-  /* border: 1px solid black; */
 }
 @media (max-width: 764px) {
   .portfolio-wrapper {
-    /* border: 1px solid red; */
     display: block;
   }
   .portfolio-text {
@@ -800,7 +803,6 @@ span {
   justify-content: center;
   align-items: center;
   min-height: 35rem;
-  /* border: 1px solid black; */
 }
 .contact-title {
   font-size: var(--h2-font);
@@ -818,7 +820,6 @@ span {
   align-items: center;
   padding: 1rem;
   margin: 1rem;
-  /* border: 1px solid black; */
 }
 .contact-a {
   justify-content: space-between;
@@ -857,7 +858,11 @@ span {
   background-color: var(--secondary-color);
 }
 .footer-wrapper > p {
-  padding: 0.5rem;
+  padding: 0.8rem;
+}
+.footer-wrapper i {
+  font-size: 1.2rem;
+  color: var(--accent-color);
 }
 @media (max-width: 454px) {
   .footer-wrapper {
@@ -865,4 +870,3 @@ span {
     justify-content: center;
   }
 }
-/* ----------Menu Bar---------- */

@@ -8,8 +8,8 @@ const skillsDb = [
     sname: 'CSS3'
   },
   {
-    image: 'SCSS.png',
-    sname: 'SCSS'
+    image: 'SASS.png',
+    sname: 'SASS'
   },
   {
     image: 'JS.png',
