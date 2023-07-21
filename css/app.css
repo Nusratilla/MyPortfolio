@@ -50,6 +50,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--primary-color);
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
   background-color: var(--primary-color);
@@ -78,6 +79,7 @@ span {
   color: var(--secondary-color);
   text-shadow: 0 1px 1px var(--shadow-color-opacity);
 }
+
 /* ----------Menu Bar---------- */
 .menubar {
   position: fixed;
@@ -333,6 +335,7 @@ span {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 3rem;
 }
 .about-me-bl {
   display: flex;
@@ -355,7 +358,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 350px;
+  /* min-height: 350px; */
 }
 .about-me-2 {
   display: flex;
@@ -363,7 +366,7 @@ span {
   justify-content: center;
   align-items: center;
   max-width: 50%;
-  margin: 1rem;
+  margin: 2rem 1rem;
   justify-content: center;
 }
 .about-me-title {
@@ -379,8 +382,6 @@ span {
   height: 310;
   width: 250;
   border-radius: 0.5rem;
-  /* border: 3px solid var(--secondary-color);
-  box-shadow: 0 0 6px 1px var(--shadow-color-opacity); */
 }
 .about-main-image img {
   height: 100%;
@@ -602,6 +603,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 3rem;
   width: 90%;
 }
 .skills-row {
@@ -642,7 +644,6 @@ span {
   z-index: 5;
   overflow: hidden;
 }
-
 .skill-in-card {
   position: absolute;
   display: flex;
@@ -727,7 +728,7 @@ span {
 .portfolio-wrapper {
   display: flex;
   flex-direction: row-reverse;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 .portf-coln1 {
   position: relative;
@@ -802,7 +803,6 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 35rem;
 }
 .contact-title {
   font-size: var(--h2-font);

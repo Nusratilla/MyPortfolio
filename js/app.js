@@ -24,11 +24,26 @@ window.addEventListener('DOMContentLoaded', () => {
             localStorage.removeItem('darkMode')
         }
     });
+    // ---------------Animation---------------
+    const hiddenElements = document.querySelectorAll('.animation-right, .animation-left, .animation-scale, .animation-rotate');
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('show-animation', entry.isIntersecting)
+            });
+        },
+        {  
+            threshold: .15,
+        }
+    );
+
+    hiddenElements.forEach((el) => observer.observe(el));
 
     // ---------------typed animation--------------- 
     const typed = new Typed('.name-input', {
         strings: ['Front-End Web Developer', 'Web Designer'],
-        typeSpeed: 90,
+        typeSpeed: 80,
         backSpeed: 60,
         loop: true
     })
