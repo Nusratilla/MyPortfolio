@@ -153,9 +153,9 @@ span {
 }
 #menu-close-icon {
   position: absolute;
-  top: 1rem;
+  top: 1.5rem;
   right: 1.5rem;
-  color: var(--font-color);
+  color: #fff;
   font-size: 2rem;
   display: none;
 }
@@ -178,10 +178,14 @@ span {
     width: 100%;
     font-size: 1rem;
     border-radius: 0 0 0.3rem 0.3rem;
-    background: var(--secondary-color);
+    background: linear-gradient(
+      65deg,
+      var(--secondary-color) 35%,
+      var(--accent-color) 36%,
+      var(--secondary-color) 37%
+    );
     border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 2rem;
-    padding-top: 3rem;
+    padding: 2rem 0;
     text-align: center;
     transition: 0.6s ease-in-out;
   }
@@ -323,7 +327,7 @@ span {
 }
 .circle-cols1-2 {
   bottom: -60px;
-  left: 1px;
+  left: -15px;
   z-index: 1;
   animation: move-left1 2s ease-in-out infinite alternate-reverse;
 }
@@ -348,6 +352,12 @@ span {
   .cols1 {
     max-width: 35rem;
     margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 350px) {
+  .circle {
+    width: 90px;
+    height: 90px;
   }
 }
 /* ----------About section---------- */
