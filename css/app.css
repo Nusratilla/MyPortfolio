@@ -75,6 +75,12 @@ section {
   align-items: center;
   max-width: 1920px;
 }
+@media screen and (min-width: 1048px) {
+  section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 span {
   color: var(--secondary-color);
   text-shadow: 0 1px 1px var(--shadow-color-opacity);
@@ -145,6 +151,14 @@ span {
   cursor: pointer;
   display: none;
 }
+#menu-close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: var(--font-color);
+  font-size: 2rem;
+  display: none;
+}
 @media (max-width: 954px) {
   .menubar {
     padding: 1.25rem 4%;
@@ -154,28 +168,36 @@ span {
   #menu-icon {
     display: block;
   }
+  #menu-close-icon {
+    display: block;
+  }
   .navbar {
-    position: fixed;
-    top: 100%;
-    right: -16rem;
-    width: 16rem;
+    position: absolute;
+    top: -400%;
+    left: 0;
+    width: 100%;
     font-size: 1rem;
-    padding: 0.8rem 2%;
-    border-radius: 0 0 0 0.3rem;
-    background: var(--menu-color);
+    border-radius: 0 0 0.3rem 0.3rem;
+    background: var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
-    border-left: 2px solid var(--secondary-color);
     padding-bottom: 2rem;
+    padding-top: 3rem;
     text-align: center;
     transition: 0.6s ease-in-out;
   }
   .navbar.active {
     display: block;
-    right: 0;
+    top: 0;
   }
   .navbar a {
     display: block;
-    margin: 0.8rem 0;
+    margin: 1rem 0;
+  }
+  .navbar a:hover {
+    color: var(--accent-color);
+  }
+  .navbar #icon-moon:hover {
+    color: var(--accent-color);
   }
 }
 /* --------------- Hero Section --------------- */
@@ -325,6 +347,7 @@ span {
   }
   .cols1 {
     max-width: 35rem;
+    margin-bottom: 1.5rem;
   }
 }
 /* ----------About section---------- */
