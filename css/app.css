@@ -12,6 +12,7 @@ body {
   --menu-color: rgba(107, 107, 107, 0.8);
   --secondary-color: #9818d6;
   --accent-color: #ff4321;
+  --menubar-hight: 5rem;
 
   --h1-font: 2.6rem;
   --h2-font: 2.4rem;
@@ -31,6 +32,11 @@ body {
     --h5-font: 1.2rem;
     --h6-font: 1.1rem;
     --p-font: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    --menubar-hight: 4rem;
   }
 }
 .dark-theme {
@@ -75,12 +81,6 @@ section {
   align-items: center;
   max-width: 1920px;
 }
-@media screen and (min-width: 1048px) {
-  section {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 span {
   color: var(--secondary-color);
   text-shadow: 0 1px 1px var(--shadow-color-opacity);
@@ -95,6 +95,7 @@ span {
   top: 0;
   left: 0;
   width: 100%;
+  height: var(--menubar-hight);
   padding: 20px 100px;
   border-radius: 0 0 0.5rem 0.5rem;
   background: var(--menu-color);
@@ -134,15 +135,14 @@ span {
   color: var(--secondary-color);
   text-shadow: 0 1px 1px var(--shadow-color-opacity);
 }
-.navbar #icon-moon {
-  font-size: 1.2rem;
-  padding-left: 1.2rem;
-  color: #ffffff;
-  text-shadow: 0 1px 1px var(--shadow-color-opacity);
+.navbar .mood-button {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
   cursor: pointer;
 }
-.navbar #icon-moon:hover {
-  color: var(--secondary-color);
+.navbar .mood-button:hover {
+  box-shadow: 0 1px 1px 1px var(--shadow-color-opacity);
   transition: 0.4s;
 }
 #menu-icon {
@@ -161,7 +161,7 @@ span {
 }
 @media (max-width: 954px) {
   .menubar {
-    padding: 1.25rem 4%;
+    padding: 0 5%;
   }
 }
 @media (max-width: 768px) {
@@ -173,7 +173,7 @@ span {
   }
   .navbar {
     position: absolute;
-    top: -400%;
+    top: -500%;
     left: 0;
     width: 100%;
     font-size: 1rem;

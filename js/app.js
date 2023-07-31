@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // ---------------Dark Theme---------------
 
-  const iconMoon = document.querySelector("#icon-moon");
+  const iconMoon = document.querySelector(".mood-button");
   const darkMode = localStorage.getItem("darkMode");
 
   if (darkMode) document.body.classList.add(darkMode);
