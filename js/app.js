@@ -24,7 +24,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   iconMoon.addEventListener("click", () => {
     document.body.classList.toggle("dark-theme");
-    iconMoon.classList.toggle("bi-sun-fill");
     if (document.body.classList.contains("dark-theme")) {
       localStorage.setItem("darkMode", "dark-theme");
     } else {

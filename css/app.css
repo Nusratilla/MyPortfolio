@@ -136,13 +136,16 @@ span {
   text-shadow: 0 1px 1px var(--shadow-color-opacity);
 }
 .navbar .mood-button {
-  width: 1.4rem;
+  /* width: 1.4rem;
   height: 1.4rem;
-  border-radius: 50%;
+  border-radius: 50%; */
+  color: #fff;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 .navbar .mood-button:hover {
-  box-shadow: 0 1px 1px 1px var(--shadow-color-opacity);
+  color: var(--secondary-color);
+  text-shadow: 0 3px 3px 3px var(--shadow-color-opacity);
   transition: 0.4s;
 }
 #menu-icon {
