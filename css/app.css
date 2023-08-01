@@ -136,9 +136,6 @@ span {
   text-shadow: 0 1px 1px var(--shadow-color-opacity);
 }
 .navbar .mood-button {
-  /* width: 1.4rem;
-  height: 1.4rem;
-  border-radius: 50%; */
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
@@ -176,7 +173,7 @@ span {
   }
   .navbar {
     position: absolute;
-    top: -500%;
+    top: -600%;
     left: 0;
     width: 100%;
     font-size: 1rem;
@@ -284,6 +281,7 @@ span {
   font-weight: 600;
   color: #0e0e0e;
   text-shadow: 0 1px #fff;
+  box-shadow: 0 1px 1px 1px var(--shadow-color-opacity);
 }
 .button:hover {
   color: var(--accent-color);

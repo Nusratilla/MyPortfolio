@@ -5,6 +5,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const closeIcon = document.querySelector("#menu-close-icon");
   const navAnc = document.querySelectorAll(".nav-link");
 
+  const iconMoon = document.querySelector(".mood-button");
+  const darkMode = localStorage.getItem("darkMode");
+
   menuIcon.addEventListener("click", () => {
     navbar.classList.add("active");
   });
@@ -14,11 +17,9 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   navAnc.forEach((l) => l.addEventListener("click", linkAction));
   closeIcon.addEventListener("click", linkAction);
+  iconMoon.addEventListener("click", linkAction);
 
   // ---------------Dark Theme---------------
-
-  const iconMoon = document.querySelector(".mood-button");
-  const darkMode = localStorage.getItem("darkMode");
 
   if (darkMode) document.body.classList.add(darkMode);
 
