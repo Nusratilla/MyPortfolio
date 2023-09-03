@@ -1,46 +1,50 @@
 const skillsDb = [
   {
-    image: 'HTML5.png',
-    sname: 'HTML5'
+    image: "HTML5.png",
+    sname: "HTML5",
   },
   {
-    image: 'CSS3.png',
-    sname: 'CSS3'
+    image: "CSS3.png",
+    sname: "CSS3",
   },
   {
-    image: 'SASS.png',
-    sname: 'SASS'
+    image: "SASS.png",
+    sname: "SASS",
   },
   {
-    image: 'JS.png',
-    sname: 'JavaScript'
+    image: "JS.png",
+    sname: "JavaScript",
   },
   {
-    image: 'JSON.png',
-    sname: 'JSON'
+    image: "JSON.png",
+    sname: "JSON",
   },
   {
-    image: 'ES6.png',
-    sname: 'ES6'
+    image: "ES6.png",
+    sname: "ES6",
   },
   {
-    image: 'WP.png',
-    sname: 'WordPress'
+    image: "JQuery.png",
+    sname: "JQuery",
   },
   {
-    image: 'BS.png',
-    sname: 'Bootstrap'
+    image: "BS.png",
+    sname: "Bootstrap",
   },
   {
-    image: 'GIT.png',
-    sname: 'Git'
+    image: "WP.png",
+    sname: "WordPress",
   },
   {
-    image: 'GITHUB.png',
-    sname: 'GitHub'
+    image: "GIT.png",
+    sname: "Git",
   },
   {
-    image: 'VSC.png',
-    sname: 'VSCode'
+    image: "GITHUB.png",
+    sname: "GitHub",
   },
-]
+  {
+    image: "VSC.png",
+    sname: "VSCode",
+  },
+];
