@@ -10,7 +10,8 @@ body {
   --font-color: rgb(0, 0, 0);
   --shadow-color-opacity: rgba(0, 0, 0, 0.5);
   --menu-color: rgba(107, 107, 107, 0.8);
-  --secondary-color: #9818d6;
+  /* --secondary-color: #9818d6; */
+  --secondary-color: #7125eb;
   --accent-color: #ff4321;
   --menubar-hight: 4rem;
 
@@ -79,7 +80,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1920px;
+  max-width: 1224px;
 }
 span {
   color: var(--secondary-color);
@@ -461,10 +462,10 @@ span {
 }
 .about-myCard {
   background-color: transparent;
-  width: 240px;
+  width: 200px;
   height: 300px;
   margin: 1.5rem;
-  perspective: 1000px;
+  perspective: 1500px;
 }
 
 .about-title {
@@ -819,6 +820,22 @@ span {
   font-size: var(--p-font);
   color: var(--font-color);
 }
+.tool-list {
+  display: flex;
+  list-style: none;
+  margin: 1rem;
+}
+.tool-list > li {
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 1px 2px var(--shadow-color-opacity);
+  color: rgb(255, 255, 255);
+  border-radius: 3px;
+  font-size: 1rem;
+  /* color: var(--font-color); */
+  margin: 0 3px;
+  padding: 3px 6px;
+}
 .portfolio-wrapper2 {
   display: flex;
   justify-content: center;
@@ -852,6 +869,10 @@ span {
   display: flex;
   max-width: 95%;
 }
+.port-btns i {
+  font-weight: 700;
+  padding: 0 0.4rem;
+}
 @media (max-width: 768px) {
   .portfolio-wrapper {
     display: flex;
@@ -870,11 +891,6 @@ span {
     left: 0;
     top: -15px;
     max-width: 90%;
-  }
-}
-@media (max-width: 425px) {
-  .port-btns {
-    display: block;
   }
 }
 
