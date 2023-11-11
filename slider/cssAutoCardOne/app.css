@@ -8,12 +8,11 @@
 }
 
 .swiper-pagination-bullet-active {
-  width: 25px;
+  width: 22px;
   border-radius: 10px;
   transform: scale(1.1);
-  background: #fff;
+  background: #ffffff;
   opacity: 0.8;
-  box-shadow: 0px 0px 6px rgb(255, 255, 255);
 }
 
 .portfolio-title {
@@ -70,8 +69,8 @@
   margin-bottom: 1rem;
   border-bottom: 3px solid #fff;
 }
-.card-big-one > h2 {
-  font-size: var(--h2-font);
+.card-big-one > h3 {
+  font-size: var(--h3-font);
   color: #fff;
   padding: 1rem 0.5rem 0 0.5rem;
 }
@@ -150,7 +149,6 @@
 @media (max-width: 425px) {
   .swiper-button-next {
     right: -5px;
-    font-size: 8px;
   }
   .swiper-button-prev {
     left: -5px;
