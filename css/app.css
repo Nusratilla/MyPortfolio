@@ -75,11 +75,11 @@ body {
   border-bottom: 2px solid var(--accent-color);
 }
 section {
-  position: relative;
+  /* position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   max-width: 1224px;
 }
 span {
@@ -88,6 +88,7 @@ span {
 }
 
 /* ----------Menu Bar---------- */
+
 .menubar {
   position: fixed;
   display: flex;
@@ -98,7 +99,6 @@ span {
   width: 100%;
   height: var(--menubar-hight);
   padding: 20px 100px;
-  border-radius: 0 0 0.5rem 0.5rem;
   background: var(--menu-color);
   backdrop-filter: blur(10px);
   border-bottom: 2px solid var(--secondary-color);
@@ -212,7 +212,7 @@ span {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   padding-top: 7rem;
 }
 .intro-wrapper {
@@ -503,7 +503,7 @@ span {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   color: white;
   box-shadow: 0 0 0.3em var(--shadow-color-opacity);
   font-weight: 700;
@@ -547,7 +547,7 @@ span {
   height: 103%;
   position: absolute;
   z-index: -1;
-  border-radius: 1em;
+  border-radius: 0.2rem;
   filter: blur(20px);
   animation: animate 5s linear infinite;
 }
@@ -609,7 +609,7 @@ span {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   color: white;
   box-shadow: 0 0 0.3em var(--shadow-color-opacity);
   font-weight: 700;
@@ -636,7 +636,7 @@ span {
   height: 103%;
   position: absolute;
   z-index: -1;
-  border-radius: 1em;
+  border-radius: 0.2rem;
   filter: blur(20px);
   animation: animate 5s linear infinite;
 }
@@ -644,10 +644,11 @@ span {
 .skill-section {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 3rem;
-  width: 90%;
+  padding: 1rem;
+  width: 100%;
 }
 .skills-row {
   display: flex;
@@ -656,14 +657,14 @@ span {
   justify-content: space-around;
   width: 100%;
   min-height: 25rem;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   box-shadow: 0 0 8px 2px var(--shadow-color-opacity);
   border: 3px solid var(--secondary-color);
 }
 .skills-title {
   font-size: var(--h2-font);
   color: var(--font-color);
-  padding: 1rem;
+  padding: 3rem;
 }
 .skill-wrapper {
   position: relative;
@@ -680,7 +681,7 @@ span {
   justify-content: center;
   width: 80px;
   height: 100px;
-  border-radius: 14px;
+  border-radius: 0.2rem;
   margin: 1rem;
   background-color: #9e9e9e;
   box-shadow: 0 0 6px 1px var(--shadow-color-opacity);
@@ -700,7 +701,7 @@ span {
   z-index: 2;
   background: #fff;
   backdrop-filter: blur(24px);
-  border-radius: 10px;
+  border-radius: 0.2rem;
   overflow: hidden;
   outline: 1px solid var(--secondary-color);
 }
@@ -755,7 +756,20 @@ span {
 }
 
 /* ----------Portfolio-Section---------- */
-.portfolio-section {
+/* .portfolio-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+} */
+/* .portfolio-title {
+  font-size: var(--h2-font);
+  color: var(--font-color);
+  padding: 5rem 1rem;
+} */
+/* .portfolio-section {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -835,7 +849,6 @@ span {
   color: rgb(255, 255, 255);
   border-radius: 3px;
   font-size: 1rem;
-  /* color: var(--font-color); */
   margin: 0 3px;
   padding: 3px 6px;
 }
@@ -895,7 +908,7 @@ span {
     top: -15px;
     max-width: 90%;
   }
-}
+} */
 
 /* ----------Contact Section---------- */
 .contact-section {
