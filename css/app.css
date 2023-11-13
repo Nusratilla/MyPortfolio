@@ -433,7 +433,7 @@ span {
 .about-main-image {
   height: 310;
   width: 250;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   box-shadow: var(--box-shadow);
 }
 .about-main-image img {
