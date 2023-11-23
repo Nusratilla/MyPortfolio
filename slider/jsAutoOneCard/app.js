@@ -3,14 +3,9 @@ var swiper = new Swiper(".horizontal-card-big", {
   spaceBetween: 1,
   loop: true,
   grabCursor: true,
-  // autoplay: {
-  //   delay: 10000,
-  //   disableOnInteraction: false,
-  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    // dynamicBullets: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",

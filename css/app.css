@@ -6,7 +6,7 @@
 }
 
 body {
-  --primary-color: rgba(238, 241, 255, 1);
+  --primary-color: rgb(196, 207, 250);
   --font-color: rgb(0, 0, 0);
   --shadow-color-opacity: rgba(0, 0, 0, 0.5);
   --secondary-color: #6025eb;
@@ -40,7 +40,7 @@ body {
   }
 }
 .dark-theme {
-  --primary-color: #1d1d1d;
+  --primary-color: #000000;
   --font-color: rgb(255, 255, 255);
   --shadow-color-opacity: rgba(255, 255, 255, 0.5);
   --box-shadow: 1px 2px 16px 1px #ffffff;
@@ -74,11 +74,6 @@ body {
   border-bottom: 2px solid var(--accent-color);
 }
 section {
-  /* position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   max-width: 1224px;
 }
 span {
@@ -88,7 +83,7 @@ span {
 
 /* ----------Menu Bar---------- */
 
-.header {
+.hero {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -110,7 +105,7 @@ span {
   padding: 0 2rem;
   z-index: 1000;
 }
-.header::before {
+.hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -120,7 +115,7 @@ span {
   background: linear-gradient(90deg, transparent, var(--accent-color));
   transition: 0.3s ease-out;
 }
-.header:hover::before {
+.hero:hover::before {
   left: 100%;
 }
 .logo {
