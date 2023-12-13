@@ -14,11 +14,15 @@
   background: #ffffff;
   opacity: 0.8;
 }
-
+.protfolio-title-div {
+  display: flex;
+  justify-content: center;
+}
 .portfolio-title {
   font-size: var(--h2-font);
   color: var(--font-color);
   padding: 5rem 1rem 1rem;
+  justify-content: center;
 }
 
 .horizontal-card-big-head {
