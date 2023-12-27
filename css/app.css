@@ -12,7 +12,7 @@ body {
   --secondary-color: #6025eb;
   --accent-color: #ff4321;
   --menubar-hight: 4.5rem;
-  --box-shadow: 0px 0px 6px #000000;
+  --box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
 
   --h1-font: 2.6rem;
   --h2-font: 2.4rem;
@@ -43,7 +43,7 @@ body {
   --primary-color: #000000;
   --font-color: rgb(255, 255, 255);
   --shadow-color-opacity: rgba(255, 255, 255, 0.5);
-  --box-shadow: 0px 0px 12px #ffffff;
+  --box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
   transition: 0.5s ease;
 }
 html {
@@ -443,8 +443,8 @@ span {
   color: var(--font-color);
 }
 .about-main-image {
-  height: 310;
-  width: 250;
+  max-height: 450px;
+  max-width: 450px;
   filter: drop-shadow(0px 0px 15px var(--shadow-color-opacity));
 }
 .about-main-image img {
@@ -531,6 +531,7 @@ span {
 }
 .about-img img {
   width: 150px;
+  filter: drop-shadow(0px 0px 15px var(--shadow-color-opacity));
 }
 
 .about-frontSide,
@@ -567,26 +568,14 @@ span {
   width: 103%;
   height: 103%;
   position: absolute;
-  box-shadow: var(--box-shadow);
+  /* filter: drop-shadow(0px 0px 15px var(--shadow-color-opacity)); */
+  /* box-shadow: var(--box-shadow); */
   z-index: -1;
   border-radius: 0.2rem;
   filter: blur(20px);
   animation: animate 5s linear infinite;
 }
 
-@keyframes animate {
-  0% {
-    opacity: 0.3;
-  }
-
-  80% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0.3;
-  }
-}
 /* ----------Fun Facts---------- */
 .fun-wrapper {
   position: relative;
@@ -602,7 +591,6 @@ span {
   height: 230px;
   margin: 2rem 1rem;
   perspective: 1000px;
-  box-shadow: var(--box-shadow);
 }
 
 .fun-title {
@@ -634,12 +622,12 @@ span {
   border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 0.2rem;
   color: white;
-  box-shadow: 0 0 0.3em var(--shadow-color-opacity);
   font-weight: 700;
 }
 .fun-img img {
   width: 120px;
   border-radius: 50%;
+  filter: drop-shadow(0px 0px 15px var(--shadow-color-opacity));
 }
 .fun-frontSide,
 .fun-frontSide::before {
@@ -660,8 +648,22 @@ span {
   position: absolute;
   z-index: -1;
   border-radius: 0.2rem;
+  /* filter: drop-shadow(0px 0px 15px var(--shadow-color-opacity)); */
   filter: blur(20px);
   animation: animate 5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    opacity: 0.5;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
 }
 /* ----------skill-section---------- */
 .skill-section {
