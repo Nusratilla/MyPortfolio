@@ -422,7 +422,6 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 350px; */
 }
 .about-me-2 {
   display: flex;
@@ -565,14 +564,12 @@ span {
   left: 50%;
   transform: translate(-50%, -50%);
   content: "";
-  width: 103%;
-  height: 103%;
+  width: 105%;
+  height: 105%;
   position: absolute;
-  /* filter: drop-shadow(0px 0px 15px var(--shadow-color-opacity)); */
-  /* box-shadow: var(--box-shadow); */
   z-index: -1;
   border-radius: 0.2rem;
-  filter: blur(20px);
+  filter: blur(15px);
   animation: animate 5s linear infinite;
 }
 
@@ -643,13 +640,12 @@ span {
   left: 50%;
   transform: translate(-50%, -50%);
   content: "";
-  width: 103%;
-  height: 103%;
+  width: 105%;
+  height: 105%;
   position: absolute;
   z-index: -1;
   border-radius: 0.2rem;
-  /* filter: drop-shadow(0px 0px 15px var(--shadow-color-opacity)); */
-  filter: blur(20px);
+  filter: blur(15px);
   animation: animate 5s linear infinite;
 }
 @keyframes animate {
