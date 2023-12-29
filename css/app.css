@@ -153,7 +153,6 @@ span {
     var(--accent-color) 65%,
     var(--secondary-color) 66%
   );
-  /* background: linear-gradient(-1deg, transparent, var(--accent-color)); */
   transition: 0.3s ease-in-out;
 }
 .hero:hover::before {

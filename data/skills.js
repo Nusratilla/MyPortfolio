@@ -1,5 +1,9 @@
 const skillsDb = [
   {
+    image: "WP.png",
+    sname: "WordPress",
+  },
+  {
     image: "HTML5.png",
     sname: "HTML5",
   },
@@ -30,10 +34,6 @@ const skillsDb = [
   {
     image: "BS.png",
     sname: "Bootstrap",
-  },
-  {
-    image: "WP.png",
-    sname: "WordPress",
   },
   {
     image: "GIT.png",

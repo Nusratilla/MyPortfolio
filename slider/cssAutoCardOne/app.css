@@ -44,7 +44,6 @@
   border-radius: 0.2rem;
   --swiper-navigation-color: #fff;
   box-shadow: var(--box-shadow);
-  /* border: 1px solid black; */
 }
 
 .horizontal-card-big-slide {
@@ -64,13 +63,10 @@
   background-color: var(--secondary-color);
   border-radius: 0.3rem;
   box-shadow: var(--box-shadow);
-  /* border: 1px solid black; */
 }
 .card-big-one {
-  /* position: relative; */
   width: 90%;
   padding: 0.5rem;
-  /* right: 0; */
   margin-bottom: 1rem;
   border-bottom: 3px solid #fff;
 }
@@ -85,7 +81,6 @@
   align-items: center;
   width: 90%;
   margin-bottom: 3rem;
-  /* border: 1px solid black; */
 }
 .card-big-left {
   display: flex;
@@ -93,7 +88,6 @@
   justify-content: center;
   width: 50%;
   height: 100%;
-  /* border: 1px solid black; */
 }
 .card-big-left-p > p {
   font-size: var(--p-font);
@@ -127,7 +121,6 @@
   justify-content: center;
   align-items: center;
   width: 50%;
-  /* border: 1px solid black; */
 }
 .card-big-right > img {
   max-width: 100%;
