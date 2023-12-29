@@ -34,9 +34,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // ---------------typed animation---------------
   const typed = new Typed(".name-input", {
-    strings: ["Front-End Web Developer", "Web Designer"],
-    typeSpeed: 80,
-    backSpeed: 60,
+    strings: ["Front-End Developer", "WordPress Developer", "Web Designer"],
+    typeSpeed: 70,
+    backSpeed: 50,
     loop: true,
   });
 

@@ -143,17 +143,12 @@ span {
   content: "";
   position: absolute;
   top: 0;
-  left: -5rem;
-  width: 5rem;
+  left: -100%;
+  width: 100%;
   height: var(--menubar-hight);
-  background: linear-gradient(
-    65deg,
-    var(--secondary-color) 45%,
-    var(--accent-color) 46%,
-    var(--accent-color) 65%,
-    var(--secondary-color) 66%
-  );
-  transition: 0.3s ease-in-out;
+  background: linear-gradient(90deg, transparent, #ffffff);
+  opacity: 0.3;
+  transition: 0.5s ease-in-out;
 }
 .hero:hover::before {
   left: 100%;
