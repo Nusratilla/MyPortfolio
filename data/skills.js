@@ -20,12 +20,12 @@ const skillsDb = [
     sname: "JavaScript",
   },
   {
-    image: "JSON.png",
-    sname: "JSON",
-  },
-  {
     image: "ES6.png",
     sname: "ES6",
+  },
+  {
+    image: "JSON.png",
+    sname: "JSON",
   },
   {
     image: "JQuery.png",
