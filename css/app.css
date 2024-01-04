@@ -117,13 +117,18 @@ span {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  color: white;
+  color: #ffffff;
   background-color: var(--secondary-color);
   width: 2rem;
   height: 2rem;
   border-radius: 0.2rem;
   font-size: 2rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bi-arrow-up-square:hover {
+  color: var(--accent-color);
 }
 
 /* ----------Menu Bar---------- */
