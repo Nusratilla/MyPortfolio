@@ -57,7 +57,6 @@ body {
   align-items: center;
   background-color: var(--primary-color);
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   background-color: var(--primary-color);
@@ -113,6 +112,18 @@ span {
   color: var(--accent-color);
   box-shadow: 0 0 6px #fcfcfc, 0 5px 3px #d6d7d9, 0 -3px 4px #cecfd1,
     0 -3px 4px #fefefe, inset 0 0 5px 3px #999;
+}
+.bi-arrow-up-square {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: white;
+  background-color: var(--secondary-color);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  font-size: 2rem;
+  display: flex;
 }
 
 /* ----------Menu Bar---------- */
