@@ -58,4 +58,13 @@ window.addEventListener("DOMContentLoaded", () => {
     `;
   });
   document.querySelector(".skill-wrapper").innerHTML = skillHTML;
+
+  // ---------------------- SCROLL UP BTN ------------------
+  const scrollUp = () => {
+    const scrollUp = document.getElementById("scroll-up");
+    this.scrollY >= 500
+      ? scrollUp.classList.add("show-scroll")
+      : scrollUp.classList.remove("show-scroll");
+  };
+  window.addEventListener("scroll", scrollUp);
 });

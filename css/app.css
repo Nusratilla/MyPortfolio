@@ -113,22 +113,34 @@ span {
   box-shadow: 0 0 6px #fcfcfc, 0 5px 3px #d6d7d9, 0 -3px 4px #cecfd1,
     0 -3px 4px #fefefe, inset 0 0 5px 3px #999;
 }
-.bi-arrow-up-square {
+.scrollup {
   position: fixed;
-  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   right: 1rem;
+  bottom: -30%;
   color: #ffffff;
   background-color: var(--secondary-color);
   width: 2rem;
   height: 2rem;
   border-radius: 0.2rem;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 2.2rem;
+  filter: drop-shadow(0px 0px 15px var(--shadow-color-opacity));
+  z-index: 99;
+  opacity: 0.8;
+  transition: 0.8s;
 }
-.bi-arrow-up-square:hover {
+.scrollup:hover {
   color: var(--accent-color);
+}
+.show-scroll {
+  bottom: 2rem;
+}
+@media (max-width: 954px) {
+  .scrollup {
+    display: none;
+  }
 }
 
 /* ----------Menu Bar---------- */
