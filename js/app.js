@@ -45,15 +45,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
   skillsDb.forEach((skill) => {
     skillHTML += `
-        <div class="skill-card">
-            <div class="skill-in-card">
-              <div class="skill-img">
-                <img src="img/SKILL-LOGO/${skill.image}" />
-                <p class="skill-p">${skill.sname}</p>
-              </div>
-            </div>
-            <div class="skill-anm-bl"></div>
+      <div class="skill-card">
+        <div class="skill-in-card">
+          <div class="skill-img">
+            <img src="img/SKILL-LOGO/${skill.image}" />
+            <p class="skill-p">${skill.sname}</p>
+          </div>
         </div>
+        <div class="skill-anm-bl"></div>
+      </div>
     `;
   });
   document.querySelector(".skill-wrapper").innerHTML = skillHTML;

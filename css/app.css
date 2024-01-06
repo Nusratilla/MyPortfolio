@@ -158,7 +158,6 @@ span {
   justify-content: center;
   align-items: center;
   background-color: var(--primary-color);
-  /* background-image: linear-gradient(315deg, #2d3436 15%, #000000 54%); */
   z-index: 99999;
   transition: all 0.5s ease;
 }
