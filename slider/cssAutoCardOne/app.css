@@ -60,8 +60,14 @@
   width: 100%;
   min-height: 30.5rem;
   overflow: hidden;
-  background-color: var(--secondary-color);
-  border-radius: 0.3rem;
+  background: linear-gradient(
+    65deg,
+    var(--secondary-color) 35%,
+    var(--accent-color) 35.5%,
+    var(--secondary-color) 36%
+  );
+  border-radius: 0.2rem;
+  border: 1px solid #ffffff;
   box-shadow: var(--box-shadow);
 }
 .card-big-one {

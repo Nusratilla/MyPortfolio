@@ -6,11 +6,11 @@
 }
 
 body {
-  --primary-color: rgb(222, 229, 255);
+  --primary-color: rgb(197, 213, 255);
   --font-color: rgb(44, 44, 44);
   --shadow-color-opacity: rgba(0, 0, 0, 0.5);
-  --secondary-color: #6025eb;
-  --accent-color: #ff4321;
+  --secondary-color: #6526f8;
+  --accent-color: #ff16f3;
   --menubar-hight: 4.5rem;
   --box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
 
@@ -67,7 +67,7 @@ body {
     65deg,
     var(--secondary-color) 33%,
     var(--accent-color) 34%,
-    var(--accent-color) 38%,
+    var(--accent-color) 36%,
     var(--secondary-color) 39%,
     var(--primary-color) 90%
   );
@@ -121,7 +121,13 @@ span {
   right: 1rem;
   bottom: -30%;
   color: #ffffff;
-  background-color: var(--secondary-color);
+  background: linear-gradient(
+    65deg,
+    var(--secondary-color) 25%,
+    var(--accent-color) 26%,
+    var(--accent-color) 29%,
+    var(--secondary-color) 30%
+  );
   width: 2rem;
   height: 2rem;
   border-radius: 0.2rem;
@@ -162,6 +168,12 @@ span {
   width: min(100%, 1224px);
   height: var(--menubar-hight);
   padding: 0 2rem;
+  background: linear-gradient(
+    65deg,
+    transparent 35%,
+    var(--accent-color) 35.5%,
+    transparent 36%
+  );
   z-index: 1000;
 }
 .hero::before {
@@ -171,8 +183,8 @@ span {
   left: -100%;
   width: 100%;
   height: var(--menubar-hight);
-  background: linear-gradient(90deg, transparent, #ffffff);
-  opacity: 0.3;
+  background: linear-gradient(90deg, transparent, var(--accent-color));
+  opacity: 0.4;
   transition: 0.5s ease-in-out;
 }
 .hero:hover::before {
@@ -197,7 +209,6 @@ span {
 }
 .navbar a:hover {
   color: var(--accent-color);
-  text-shadow: 0 1px 1px var(--shadow-color-opacity);
 }
 .navbar .mood-button {
   color: #fff;
@@ -228,8 +239,10 @@ span {
   display: none;
 }
 @media (max-width: 954px) {
-  .hero {
+  .hero,
+  .menubar {
     background-color: transparent;
+    background: none;
   }
   .hero::before {
     display: none;
@@ -360,7 +373,8 @@ span {
     65deg,
     var(--secondary-color) 35%,
     var(--accent-color) 36%,
-    var(--secondary-color) 37%
+    var(--accent-color) 37%,
+    var(--secondary-color) 38%
   );
 }
 .circle-cols2 {
@@ -697,10 +711,16 @@ span {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  min-height: 20rem;
+  min-height: 22rem;
   border-radius: 0.2rem;
+  border: 1px solid #ffffff;
+  background: linear-gradient(
+    65deg,
+    var(--secondary-color) 35%,
+    var(--accent-color) 35.5%,
+    var(--secondary-color) 36%
+  );
   box-shadow: var(--box-shadow);
-  border: 3px solid var(--secondary-color);
 }
 .skills-title {
   font-size: var(--h2-font);
@@ -770,7 +790,7 @@ span {
   border-radius: 50%;
   background-color: var(--accent-color);
   opacity: 1;
-  filter: blur(12px);
+  filter: blur(6px);
   animation: blob-bounce 5s infinite ease;
 }
 
@@ -863,6 +883,12 @@ span {
   height: var(--menubar-hight);
   padding: 0 2rem;
   color: #fff;
+  background: linear-gradient(
+    65deg,
+    transparent 35%,
+    var(--accent-color) 35.5%,
+    transparent 36%
+  );
 }
 .footer-wrapper > p {
   padding: 0.1rem;
