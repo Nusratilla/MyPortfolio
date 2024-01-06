@@ -66,4 +66,13 @@ window.addEventListener("DOMContentLoaded", () => {
       : scrollUp.classList.remove("show-scroll");
   };
   window.addEventListener("scroll", scrollUp);
+
+  // -----------------------Loader---------------------------
+  const loader = document.querySelector(".loader-loading");
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+  }, 2000);
 });
